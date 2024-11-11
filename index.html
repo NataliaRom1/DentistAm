@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>DentistAm</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-small header__container">
+      <div class="header__block">
+        <a class="header__logobox" href="/"><img src="./img/DentistAm.svg" class="header__logo" /></a>
+        <div class="header__line"></div>
+        <div class="header__text">Американский<br> стоматологический центр</div>
+      </div>
+      <div class="header__contacts">
+        <div class="header__mapbox"><img src="./img/map.webp" class="header__map" /></div>
+        <div class="header__address"><div class="bold">г. Москва,</div> ул. Переяслав, д. 9</div>
+      </div>
+      <div class="header__phone">
+        <div class="header__iconbox"><img src="./img/phone.svg" class="header__icon" /></div>
+        <div>
+          <a class="header__num" href="tel:+74955357666">+7 495 <span class="color-red bold">535 76 66</span></a>
+          <div class="header__hint">Звоните в любое время</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="header-mobile">
+    <div class="container header__container">
+      <div class="header__logobox">
+        <a class="header__logobox" href="/"><img src="./img/DentistAm.svg" class="header__logo" /></a>
+      </div>
+
+      <div class="header__box">
+        <a class="header__iconbox" href="tel:+74955357666"><img src="./img/phone_mobile.svg" class="header__icon" /></a>
+        <div class="header__burger">
+          <input type="checkbox" id="toggle-checkbox" class="header__burger-checkbox">
+          <label for="toggle-checkbox" class="header__burger-icon">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.95" y1="1.05" x2="29.05" y2="1.05" stroke="black" stroke-width="1.9" stroke-linecap="round" />
+              <line x1="0.95" y1="10.55" x2="29.05" y2="10.55" stroke="black" stroke-width="1.9" stroke-linecap="round" />
+              <line x1="0.95" y1="20.05" x2="29.05" y2="20.05" stroke="black" stroke-width="1.9" stroke-linecap="round" />
+            </svg>
+          </label>
+    
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__block">
+                <div class="header__text">Американский<br> стоматологический центр</div>
+              </li>
+              <li class="header__contacts">
+                <div class="header__mapbox"><img src="./img/map.webp" class="header__map" /></div>
+                <div class="header__address">
+                  <div class="bold">г. Москва,</div> ул. Переяслав, д. 9
+                </div>
+              </li>
+              <li class="header__phone">
+                  <a class="header__num" href="tel:+74955357666">+7 495 <span class="color-red bold">535 76 66</span></a>
+                  <div class="header__hint">Звоните в любое время</div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+   
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__imgbox">
+          <img src="./img/circles_hero.webp" class="hero__img" />
+          <div class="hero__head">
+            <span class="hero__head-top">топ</span>
+            <span class="hero__head-num"></span>
+            <span class="hero__head-rating">в рейтинге<br>клиник</br>
+          </div>
+          <div class="hero__manbox"><img src="./img/man.webp" class="hero__man" /></div>
+          <div class="hero__signbox"><img src="./img/sign.webp" class="hero__sign" /></div>
+          <div class="hero__name">Бабаян Давид</div>
+          <div class="hero__text">
+            <div class="hero__text-big">Наша клиника скорее</div>
+            <div class="hero__text-big">гостеприимный дом,</div>
+            <div class="hero__text-small">чем официальное<br>медицинское учреждение</div>
+          </div>
+        </div>
+        <div class="hero__info">
+          <h1 class="hero__title"><span class="color-red">Американский</span> стоматологический центр «Дантист»</h1>
+          <div class="hero__desc"><span class="bold">Обратившись к нам, Вы можете быть уверены, <span class="nowrap">что Вас</span> обслужат <span class="color-red">на высшем уровне,</span></span> и все <span class="nowrap">Ваши проблемы</span> с зубами останутся в прошлом.</div>
+
+          <div class="button-wrapper hero__button">
+            <div class="button button-red">Записаться на прием</div>
+            <div class="button-blur"></div>
+          </div>
+
+          <div class="hero__boxes">
+            <div class="hero__btn-left">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+            <div class="hero__btn-right">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+            <div class="swiperHero hero__swiper">
+              <div class="swiper-wrapper">
+                <div class="hero__box swiper-slide">
+                  <div class="hero__iconbox"><img src="./img/tooth.webp" class="hero__icon" /></div>
+                  <div>
+                    <div class="hero__box-title">Имплантация передних зубов</div>
+                    <div class="hero__box-text">Передние зубы представлены резцами <span class="nowrap">и клыками</span>. Отличительной особенностью особенностью особенностью</div>
+                    <a href="#" class="link hero__box-link">Читать полностью</a>
+                  </div>
+                </div>
+
+                <div class="hero__box swiper-slide">
+                  <div class="hero__iconbox"><img src="./img/tooth.webp" class="hero__icon" /></div>
+                  <div>
+                    <div class="hero__box-title">Имплантация всех зубов</div>
+                    <div class="hero__box-text">Передние зубы представлены резцами <span class="nowrap">и клыками</span>. Отличительной особенностью особенностью особенностью</div>
+                    <a href="#" class="link hero__box-link">Читать полностью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__wrapper">
+        <div class="container-small services__container">
+          <div class="button button-title services__button-title">Наши услуги</div>
+          <div class="title services__title"><span class="bold">Мы предлагаем </span><span class="color-red">полное медицинское обслуживание</span><span class="bold"> людям с различными проблемами со здоровьем</span></div>
+          <div class="services__swiper">
+            <div class="services__btn-left">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+            <div class="services__btn-right">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+            <div class="swiper-pagination services__pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_1.webp" alt="Лечение зубов" class="services__img">
+                </div>
+                <div class="services__name">Лечение зубов</div>
+                <div class="services__description">Залог здоровья зубов – своевременное лечение <span class="nowrap">у стоматолога.</span> Важно обратиться в клинику...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_2.webp" alt="Удаление зубов" class="services__img">
+                </div>
+                <div class="services__name">Удаление зубов</div>
+                <div class="services__description">Удаление зуба – это простая процедура, которая давно стала рутиной для стоматологов...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_3.webp" alt="Зубной протез" class="services__img">
+                </div>
+                <div class="services__name">Зубной протез</div>
+                <div class="services__description">Профессиональная гигиена зубов – очистка всех поверхностей зуба от налета и отложений...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_4.webp" alt="Имплантация" class="services__img">
+                </div>
+                <div class="services__name">Имплантация</div>
+                <div class="services__description">Титановый имплант устанавливается на место утраченного зуба и играет роль его корня...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_1.webp" alt="Лечение зубов" class="services__img">
+                </div>
+                <div class="services__name">Лечение зубов</div>
+                <div class="services__description">Залог здоровья зубов – своевременное лечение у стоматолога. Важно обратиться в клинику...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+              <div class="services__item swiper-slide">
+                <div class="services__imgbox">
+                  <img src="./img/tooth_2.webp" alt="Удаление зубов" class="services__img">
+                </div>
+                <div class="services__name">Удаление зубов</div>
+                <div class="services__description">Удаление зуба – это простая процедура, которая давно стала рутиной для стоматологов...</div>
+                <div class="services__bottom">
+                  <div class="button button-red services__button">Записаться</div>
+                  <a href="/" class="link services__link">Читать полностью</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container-small info__container">
+        <div class="info__left">
+          <div class="info__name"><span class="color-red bold">Бабаян</span> Давид</div>
+          <div class="info__job">Главный врач</div>
+          <div class="button-wrapper info__button">
+            <div class="button button-red">Записаться на прием</div>
+            <div class="button-blur"></div>
+          </div>
+        </div>
+        <div class="info__imgbox">
+          <img src="./img/man_2.webp" alt="Фото врача Давида Бабаяна" class="info__img">
+        </div>
+        <div class="info__right">
+          <div class="button button-title info__button-right">Наша клиника</div>
+          <div class="title info__title"><div class="color-red">«Цена под ключ»</div>Мы работаем по удобной пациентам системе</div>
+          <div class="info__text">Для нас очень важно, чтобы пациент <span class="nowrap">до начала</span> лечения понимал какой будет итоговая сумма за все лечение, без подводных камней <span class="nowrap">и необоснованных</span> доплат.</div>
+          <div class="info__text">Для этого мы сделали простой и понятный прайс-лист. Дантист — одна из немногих клиник в Москве, которая может предложить высокий профессионализм врачей, самые современные, безопасные материалы <span class="nowrap">и демократичные</span> цены.</div>
+          <div class="info__signbox"><img src="./img/sign.webp" class="info__sign" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors">
+      <div class="container doctors__container">
+        <div class="doctors__top">
+          <div>
+            <div class="button button-title doctors__button-top">Наши специалисты</div>
+            <div class="title doctors__title"><span class="color-red">Познакомьтесь</span><br><span class="nowrap regular">с нашими</span> врачами</div>
+          </div>
+          <div class="doctors__text">Наш административный и вспомогательный персонал <span class="bold">обладает всеми необходимыми навыками работы с людьми</span> и обучен, чтобы помочь вам со всеми медицинскими вопросами</div>
+        </div>
+        <div class="doctors__list">
+          <article class="doctors__item">
+            <div class="doctors__imgbox">
+              <img src="./img/doctor_1.webp" alt="Удаление зубов" class="doctors__img">
+            </div>
+            <div class="doctors__name">Арзумаров Амаяк Аркадьевич</div>
+            <div class="doctors__job">Врач-стоматолог ортопед, гнатолог</div>
+            <div class="doctors__desc">Ведущий специалист клиники <span class="nowrap">по съемному</span> и несъемному протезированию</div>
+            <a href="/" class="button button-white doctors__button">Подробнее</a>
+          </article>
+          <article class="doctors__item">
+            <div class="doctors__imgbox">
+              <img src="./img/doctor_2.webp" alt="Удаление зубов" class="doctors__img">
+            </div>
+            <div class="doctors__name">Жвания Нала Анзоровна</div>
+            <div class="doctors__job">Врач-стоматолог ортодонт</div>
+            <div class="doctors__desc">Специалист по ортодонтическому лечению на всех видах брекет-систем взрослых и детей с 12 лет</div>
+            <a href="/" class="button button-white doctors__button">Подробнее</a>
+          </article>
+          <article class="doctors__item">
+            <div class="doctors__imgbox">
+              <img src="./img/doctor_3.webp" alt="Удаление зубов" class="doctors__img">
+            </div>
+            <div class="doctors__name">Арзуманов Андраник Аркадьевич</div>
+            <div class="doctors__job">Врач-стоматолог ортодонт</div>
+            <div class="doctors__desc">Специалист по ортодонтическому лечению на брекет-системах и элайнерах</div>
+            <a href="/" class="button button-white doctors__button">Подробнее</a>
+          </article>
+        </div>
+        <div class="swiperDoctors doctors__swiper">
+          <div class="doctors__btn-left">
+            <picture>
+              <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+              <img src="./img/arrow_right.svg" alt="Стрелочка" />
+            </picture>
+          </div>
+          <div class="doctors__btn-right">
+            <picture>
+              <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+              <img src="./img/arrow_right.svg" alt="Стрелочка" />
+            </picture>
+          </div>
+          <div class="swiper-pagination doctors__pagination"></div>
+          <div class="swiper-wrapper">
+            <article class="doctors__item swiper-slide">
+              <div class="doctors__imgbox">
+                <img src="./img/doctor_1.webp" alt="Удаление зубов" class="doctors__img">
+              </div>
+              <div class="doctors__name">Арзумаров Амаяк Аркадьевич</div>
+              <div class="doctors__job">Врач-стоматолог ортопед, гнатолог</div>
+              <div class="doctors__desc">Ведущий специалист клиники <span class="nowrap">по съемному</span> и несъемному протезированию</div>
+              <a href="/" class="button button-white doctors__button">Подробнее</a>
+            </article>
+            <article class="doctors__item swiper-slide">
+              <div class="doctors__imgbox">
+                <img src="./img/doctor_2.webp" alt="Удаление зубов" class="doctors__img">
+              </div>
+              <div class="doctors__name">Жвания Нала Анзоровна</div>
+              <div class="doctors__job">Врач-стоматолог ортодонт</div>
+              <div class="doctors__desc">Специалист по ортодонтическому лечению на всех видах брекет-систем взрослых и детей с 12
+                лет</div>
+              <a href="/" class="button button-white doctors__button">Подробнее</a>
+            </article>
+            <article class="doctors__item swiper-slide">
+              <div class="doctors__imgbox">
+                <img src="./img/doctor_3.webp" alt="Удаление зубов" class="doctors__img">
+              </div>
+              <div class="doctors__name">Арзуманов Андраник Аркадьевич</div>
+              <div class="doctors__job">Врач-стоматолог ортодонт</div>
+              <div class="doctors__desc">Специалист по ортодонтическому лечению на брекет-системах и элайнерах</div>
+              <a href="/" class="button button-white doctors__button">Подробнее</a>
+            </article>
+          </div>
+        </div>
+        <div class="button button-red doctors__button-else">Загрузить еще</div>
+      </div>
+    </section>
+
+    <section class="principles">
+      <div class="container principles__container">
+        <div class="principles__imgbox">
+          <img src="./img/woman.webp" class="principles__img" />
+          <div class="principles__star principles__star-1"></div>
+          <div class="principles__star principles__star-2"></div>
+          <div class="principles__star principles__star-3"></div>
+        </div>
+        <div class="principles__wrapper">
+          <div class="button button-title principles__button-top">Наши принципы</div>
+          <div class="title principles__title"><span class="regular">Улучшите </span><span class="color-red">качество вашей жизни,</span> благодаря лучшему здоровью</div>
+          <ul class="principles__list">
+            <li class="principles__item">
+              <div class="principles__iconbox"><img src="./img/principle_1.webp" class="principles__icon" /></div>
+              <div class="principles__text"><span class="bold">Во главе всего стоит пациент</span> и его здоровье — <span class="nowrap">это главное</span> правило нашего центра.</div>
+            </li>
+            <li class="principles__item">
+              <div class="principles__iconbox"><img src="./img/principle_2.webp" class="principles__icon" /></div>
+              <div class="principles__text">Качественные услуги стоматологической клиники — <span class="bold"><span class="nowrap">это лишь</span> малая часть того, что<br> мы можем предложить</span> нашим пациентам.</div>
+            </li>
+            <li class="principles__item">
+              <div class="principles__iconbox"><img src="./img/principle_3.webp" class="principles__icon" /></div>
+              <div class="principles__text"><span class="bold">Все работы наших докторов разбираются <span class="nowrap">на консилиуме</span></span> стоматологов с подробностями Вашей клинической ситуации</div>
+            </li>
+            <li class="principles__item">
+              <div class="principles__iconbox"><img src="./img/principle_4.webp" class="principles__icon" /></div>
+              <div class="principles__text"><span class="bold">Два уровня проверки стерилизации</span> и учет всей документации о стерилизации позволяют нам уверенно проводить все манипуляции.</div>
+            </li>
+          </ul>
+          <div class="button-wrapper principles__button">
+            <div class="button button-red">Записаться на прием</div>
+            <div class="button-blur"></div>
+          </div>
+          <div class="principles__star principles__star-4"></div>
+          <div class="principles__star principles__star-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__star"></div>
+        <div class="reviews__top">
+          <div class="reviews__top-col">
+            <div class="button button-title reviews__button">Отзывы</div>
+            <div class="title reviews__title"><span class="color-red">Вдохновляющие</span> истории</div>
+            <div class="reviews__links">
+              <div class="reviews__link reviews__link-all" data-filter="all">Все</div>
+              <div class="reviews__link reviews__link-text" data-filter="text">Читать отзывы</div>
+              <div class="reviews__link reviews__link-video reviews__link-active" data-filter="video">Смотреть отзывы</div>
+            </div>
+          </div>
+          <div class="reviews__top-col">
+            <div class="reviews__text">Отзывы о клинике на популярных порталах</div>
+            <div class="reviews__icons">
+              <a href="/" class="reviews__iconbox"><img src="./img/y.webp" /></a>
+              <a href="/" class="reviews__iconbox"><img src="./img/t.webp" /></a>
+              <a href="/" class="reviews__iconbox"><img src="./img/32top.webp" /></a>
+              <a href="/" class="reviews__iconbox"><img src="./img/2gis.webp" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__content">
+          <div class="swiper swiperReviews2 reviews__swiper2">
+            <div class="swiper-wrapper reviews__video-wrapper">
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                  <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Очень профессионально!</div>
+                <div class="reviews__text-text">Осталась в полном восторге от посещения! Доктор всё объяснил, успокоил,
+                  а лечение прошл. Спасибо за заботу и профессионализм!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Лучшее место для детей</div>
+                <div class="reviews__text-text">Сын боялся стоматологов, но здесь смогли найти подход к нему. Всё прошло
+                  гладко, а врач показал настоящий профессионализм. Ребёнок теперь не боится, а я довольна!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper swiperReviews2Text reviews__swiper2-text">
+            <div class="swiper-wrapper reviews__video-wrapper">
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Очень профессионально!</div>
+                <div class="reviews__text-text">Осталась в полном восторге от посещения! Доктор всё объяснил, успокоил,
+                  а лечение прошл. Спасибо за заботу и профессионализм!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Лучшее место для детей</div>
+                <div class="reviews__text-text">Сын боялся стоматологов, но здесь смогли найти подход к нему. Всё прошло
+                  гладко, а врач показал настоящий профессионализм. Ребёнок теперь не боится, а я довольна!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Очень профессионально!</div>
+                <div class="reviews__text-text">Осталась в полном восторге от посещения! Доктор всё объяснил, успокоил, а лечение прошл. Спасибо за заботу и профессионализм!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Лучшее место для детей</div>
+                <div class="reviews__text-text">Сын боялся стоматологов, но здесь смогли найти подход к нему. Всё прошло гладко, а врач показал настоящий профессионализм. Ребёнок теперь не боится, а я довольна!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper swiperReviews2Video reviews__swiper2-video">
+            <div class="swiper-wrapper reviews__video-wrapper">
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+              <div class="swiper-slide reviews__videobox" data-type="video">
+                <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                  <source src="./video/vid.mp4" type="video/mp4">
+                  <source src="./video/vid.webm" type="video/webm">
+                </video>
+                <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__col">
+            <div class="reviews__btn-top">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+            <div class="reviews__btn-bottom">
+              <picture>
+                <source srcset="./img/arrow_right_mobile.svg" media="(max-width: 768px)">
+                <img src="./img/arrow_right.svg" alt="Стрелочка" />
+              </picture>
+            </div>
+
+            <div class="swiper swiperReviews reviews__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Екатерина</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper swiperReviewsText reviews__swiper-text">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Саша</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Глаша</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Маша</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="text">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper swiperReviewsVideo reviews__swiper-video">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Анна</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Марина</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item" data-type="video">
+                  <div class="reviews__imgbox"><img src="./img/girl.webp" class="reviews__img" /></div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Алена</div>
+                    <div class="reviews__city">г. Москва</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-mobile">
+      <div class="container reviews__container">
+        <div class="reviews__top">
+            <div class="button button-title reviews__button">Отзывы</div>
+            <div class="title reviews__title"><span class="color-red">Вдохновляющие</span> истории</div>
+            <div class="reviews__links">
+              <div class="reviews__link reviews__link-text" data-filter="text">Читать отзывы</div>
+              <div class="reviews__link reviews__link-video reviews__link-active" data-filter="video">Смотреть отзывы</div>
+            </div>
+        </div>
+        <div class="reviews__content">
+          <div class="reviews__read">
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Очень профессионально!</div>
+                <div class="reviews__text-text">Осталась в полном восторге от посещения! Доктор всё объяснил, успокоил,
+                  а лечение прошл. Спасибо за заботу и профессионализм!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Лучшее место для детей</div>
+                <div class="reviews__text-text">Сын боялся стоматологов, но здесь смогли найти подход к нему. Всё прошло
+                  гладко, а врач показал настоящий профессионализм. Ребёнок теперь не боится, а я довольна!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Очень профессионально!</div>
+                <div class="reviews__text-text">Осталась в полном восторге от посещения! Доктор всё объяснил, успокоил, а
+                  лечение прошл. Спасибо за заботу и профессионализм!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Приятная атмосфера</div>
+                <div class="reviews__text-text">С самого порога ощущаешь заботу и внимательность персонала. Очень уютная
+                  клиника, где действительно не страшно лечить зубы. Вернусь обязательно!</div>
+              </div>
+              <div class="reviews__videobox" data-type="text">
+                <div class="reviews__text-title">Лучшее место для детей</div>
+                <div class="reviews__text-text">Сын боялся стоматологов, но здесь смогли найти подход к нему. Всё прошло
+                  гладко, а врач показал настоящий профессионализм. Ребёнок теперь не боится, а я довольна!</div>
+              </div>
+          </div>
+          <div class="reviews__watch">
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+            <div class="reviews__videobox" data-type="video">
+              <video id="video" preload="" class="reviews__video" poster="./img/vid_prev.webp">
+                <source src="./video/vid.mp4" type="video/mp4">
+                <source src="./video/vid.webm" type="video/webm">
+              </video>
+              <div class="reviews__play-button"><img src="./img/play.svg" /></div>
+            </div>
+          </div>
+          <div class="link reviews__link-else">Загрузить еще</div>
+        </div>
+        <div class="reviews__top-col">
+          <div class="reviews__text">Отзывы о клинике на популярных порталах</div>
+          <div class="reviews__icons">
+            <a href="/" class="reviews__iconbox"><img src="./img/y.webp" /></a>
+            <a href="/" class="reviews__iconbox"><img src="./img/t.webp" /></a>
+            <a href="/" class="reviews__iconbox"><img src="./img/32top.webp" /></a>
+            <a href="/" class="reviews__iconbox"><img src="./img/2gis.webp" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="licenses">
+      <div class="container licenses__container">
+        <div class="licenses__imgbox">
+          <img src="./img/license.webp" class="licenses__img" />
+
+          <div class="licenses__link">
+              <svg class="licenses__link-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.5955 10.6995L9.20671 8.31079C9.78192 7.54496 10.0924 6.61279 10.0912 5.655C10.0912 3.20883 8.10117 1.21875 5.655 1.21875C3.20883 1.21875 1.21875 3.20883 1.21875 5.655C1.21875 8.10117 3.20883 10.0912 5.655 10.0912C6.61261 10.0923 7.54457 9.78181 8.31025 9.20671L10.699 11.5955C10.8195 11.706 10.9779 11.7658 11.1414 11.7623C11.3048 11.7588 11.4606 11.6923 11.5762 11.5768C11.6919 11.4612 11.7584 11.3055 11.762 11.142C11.7656 10.9786 11.7059 10.8201 11.5955 10.6995ZM2.48625 5.655C2.48625 5.02828 2.67209 4.41563 3.02028 3.89454C3.36847 3.37344 3.86336 2.96729 4.44237 2.72746C5.02139 2.48762 5.65852 2.42487 6.27319 2.54714C6.88787 2.6694 7.45249 2.9712 7.89564 3.41436C8.3388 3.85751 8.6406 4.42213 8.76286 5.03681C8.88513 5.65148 8.82238 6.28861 8.58254 6.86763C8.34271 7.44664 7.93656 7.94153 7.41546 8.28972C6.89436 8.63791 6.28172 8.82375 5.655 8.82375C4.8149 8.82275 4.0095 8.48857 3.41546 7.89454C2.82143 7.3005 2.48725 6.4951 2.48625 5.655Z"
+                  fill="currentColor" />
+              </svg>
+            Посмотреть все лицензии клиники
+          </div>
+        </div>
+
+        <div class="licenses__right">
+          <div class="button button-title licenses__button-top">Лицензии</div>
+          <div class="title licenses__title"><span class="color-red">Подтверждаем</span><br>свою <span class="bold">квалификацию</span></div>
+          <div class="licenses__text">Деятельность центра <span class="bold">направлена <span class="nowrap">не только</span> <span class="nowrap">на восстановление</span> жевательной функцию зубов,</span> а и на обеспечение в полной мере их эстетики.</div>
+          <ul class="licenses__items">
+            <li class="licenses__item">ООО "СТОМАТОЛОГИЧЕСКАЯ ФИРМА «ОРТОСТОМ ЛЮКС»
+              <span class="nowrap">ИНН 7723502220</span><br><span class="nowrap">ОГРН 1027739047390</span>
+            </li>
+            <li class="licenses__item">Юридический адрес: 109341, город Москва, <span class="nowrap">ул. Перерва, д. 39</span></li>
+          </ul>
+          <div class="button-wrapper license__button">
+            <div class="button button-red">Записаться на прием</div>
+            <div class="button-blur"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="title footer__title"><span class="color-red">Удобное</span> расположение</div>
+      <div class="footer__text">Деятельность центра <span class="bold">направлена не только на восстановление жевательной функцию зубов,</span> а и на обеспечение в полной мере их эстетики.</div>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          <div class="footer__address">г. Москва, м. Братиславская, ул. Перерва, д. 39, 2 этаж</div>
+          <div class="footer__phone">
+            <div>
+              <a href="tel:+74993946030">+7 499 394 60 30</a>
+              <div class="footer__hint">Звоните в любое время</div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <a href="/" class="footer__link">Полезные статьи</a>
+            <a href="/" class="footer__link">Правовая информация</a>
+          </div>
+        </div>
+        <div class="footer__mapbox">
+          <picture>
+            <source srcset="./img/map_big_mobile.webp" media="(max-width: 768px)">
+            <img src="./img/map_big.webp" alt="Карта" class="footer__map" >
+          </picture>
+        </div>
+        <div class="footer__right">
+          <div class="footer__wa">Напишите нам в WhatsApp</div>
+          <div class="footer__time">
+            <div>
+              <span class="nowrap">Пн-Пт 09:00—21:00</span>
+              <span class="nowrap">Сб-Вс 10:00—20:00</span>
+            </div>
+          </div>
+          <div class="footer__links">
+            <a href="/" class="footer__link">Сертификаты сотрудников</a>
+            <a href="/" class="footer__link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__links-mobile">
+        <div>
+          <a class="footer__logobox" href="/"><img src="./img/DentistAm.svg" class="footer__logo"></a>
+          <a class="footer__phone" href="tel:+74955357666">+7 495 535 76 66</a>
+        </div>
+        <div>
+          <a href="/" class="footer__link">Полезные статьи</a>
+          <a href="/" class="footer__link">Политика конфиденциальности</a>
+        </div>
+        <div>
+          <a href="/" class="footer__link">Правовая информация</a>
+          <a href="/" class="footer__link">Сертификаты сотрудников</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
